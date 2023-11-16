@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3, user-scalable=yes">
+    <link rel="stylesheet" href="../css/commons/style.css">
+    <link rel="stylesheet" href="../css/commons/style_sp.css" media="screen and (max-width: 639px)">
+    <link rel="stylesheet" href="../css/commons/style_pc.css" media="screen and (min-width: 640px)">
+    <link rel="stylesheet" href="../css/commons/component.css">
+    <link rel="stylesheet" href="../css/commons/component_sp.css" media="screen and (max-width: 639px)">
+    <link rel="stylesheet" href="../css/commons/component_pc.css" media="screen and (min-width: 640px)">
+    <link rel="stylesheet" href="../css/commons/utility.css">
+    <link rel="stylesheet" href="../css/commons/utility_sp.css" media="screen and (max-width: 639px)">
+    <link rel="stylesheet" href="../css/commons/utility_pc.css" media="screen and (min-width: 640px)">
+    <link rel="stylesheet" href="../css/commons/develop/colorbox.css">
+
+    <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/component_pc.css" media="screen and (min-width: 640px)">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/pages_pc.css" media="screen and (min-width: 640px)">
+
+    <link rel="stylesheet" href="../design_resource/design_common.css">
+    <link rel="stylesheet" href="../design_resource/design_common_pc.css" media="screen and (min-width: 640px)">
+            <link rel="stylesheet" href="../design_resource/wip107/design.css">
+        <link rel="stylesheet" href="../design_resource/wip107/design_pc.css" media="screen and (min-width: 640px)">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="icon" href="../../html/template/commons/assets/img/common/favicon.ico">
+    <link rel="shortcut icon" href="../../html/template/commons/assets/img/common/favicon.ico">
+</head>
+
+<body>
+    <main class="c-invitationPage c-invitationPage--wip107 c-invitationPage--reply" style="font-family: font1">
+
+        <!-- エラー表示 -->
+                <!-- タイトル -->
+        <section class="c-invitationSec c-invitationSec-repTitle u-mB0" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
+            <div class="c-invitationSec--repTitle__ttl">
+                <img src="../design_resource/wip107/reply_title.png" alt="タイトル" class="u-mWA">
+            </div>
+        </section>
+
+        <form class="h-adr" action="reply" method="POST">
+            <span class="p-country-name" style="display:none;">Japan</span>
+        <input type="hidden" name="_token" value="hRXfcxHxgdblr6SakKOa1fT4vVinoMhv7lC5v2mD">        <!-- 返信フォーム -->
+            <section class="c-invitationSec c-invitationSec--repForm" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
+                <!-- 返信内容出欠 -->
+                <dl class="c-replyFormDl">
+                    <dt class="c-replyFormDl__dt">
+                        <p>いずれかをお選びください<span class="c-replyIcon--hissu">必須</span></p>
+                    </dt>
+                    <dd class="c-replyFormDl__dd">
+                        <div class="c-radioBtnWrap u-flxBet">
+                                                                                                <div class="c-radioBtn u-w48 js-radioBtn js-selected">
+                                        <input type="radio" id="attendance_confirmation_id_1" name="attendance_confirmation_id" value="1" class="isChecked" checked>
+                                        <label class="c-textEdit__label01 is-attend js-reply-attendance" for="attendance_confirmation_id_1">ご出席</label>
+                                    </div>
+                                                                                                                                <div class="c-radioBtn u-w48 js-radioBtn">
+                                        <input type="radio" id="attendance_confirmation_id_2" name="attendance_confirmation_id" value="2">
+                                        <label class="c-textEdit__label01 js-reply-attendance" for="attendance_confirmation_id_2">ご欠席</label>
+                                    </div>
+                                                                                    </div>
+                    </dd>
+                </dl>
+                <!-- ゲスト名 -->
+                <dl class="c-replyFormDl">
+                    <dt class="c-replyFormDl__dt">
+                        <p>ご芳名<span class="c-replyIcon--hissu">必須</span></p>
+                    </dt>
+                    <dd class="c-replyFormDl__dd">
+                        <div class="c-radioBtnWrap u-flxBet">
+                            <div class="u-w48">
+                                <input type="text" name="name01_ja" value="" placeholder="姓" class="c-textEdit__text c-textEdit__text--reply">
+                            </div>
+                            <div class="u-w48">
+                                <input type="text" name="name02_ja" value="" placeholder="名" class="c-textEdit__text c-textEdit__text--reply">
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <!-- 関係1 -->
+                <dl class="c-replyFormDl">
+                    <dt class="c-replyFormDl__dt">
+                        <p>いずれかをお選びください<span class="c-replyIcon--hissu">必須</span></p>
+                    </dt>
+                    <dd class="c-replyFormDl__dd">
+                        <div class="c-radioBtnWrap u-flxBet">
+                                                                                                <div class="c-radioBtn u-w48 js-radioBtn js-selected">
+                                        <input type="radio" id="which_guest1_id_1" name="which_guest1_id" value="1" class="isChecked" checked>
+                                        <label class="c-textEdit__label01" for="which_guest1_id_1">新郎ゲスト</label>
+                                    </div>
+                                                                                                                                <div class="c-radioBtn u-w48 js-radioBtn">
+                                        <input type="radio" id="which_guest1_id_2" name="which_guest1_id" value="2">
+                                        <label class="c-textEdit__label01" for="which_guest1_id_2">新婦ゲスト</label>
+                                    </div>
+                                                                                    </div>
+                    </dd>
+                </dl>
+
+                <!-- 連名 -->
+                <dl class="c-replyFormDl">
+                    <dt class="c-replyFormDl__dt">
+                        <p>連名</p>
+                        <p class="u-fosL u-mT15">※2名までご入力いただけます</p>
+                    </dt>
+                    <dd class="c-replyFormDl__dd">
+                        <div class="c-radioBtnWrap u-flxBet">
+                            <div class="u-w48">
+                                <input type="text" name="joint_signature1" value="" placeholder="連名1" class="c-textEdit__text c-textEdit__text--reply">
+                            </div>
+                            <div class="u-w48">
+                                <input type="text" name="joint_signature2" value="" placeholder="連名2" class="c-textEdit__text c-textEdit__text--reply">
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+
+                <!-- 電話番号 -->
+                <dl class="c-replyFormDl">
+                    <dt class="c-replyFormDl__dt">
+                        <p>電話番号<span class="c-replyIcon--hissu">必須</span></p>
+                    </dt>
+                    <dd class="c-replyFormDl__dd">
+                        <div class="u-w100">
+                            <input type="text" name="phone_number" value="" placeholder="09012345678" class="c-textEdit__text c-textEdit__text--reply">
+                        </div>
+                    </dd>
+                </dl>
+                <!-- メールアドレス -->
+                <dl class="c-replyFormDl">
+                    <dt class="c-replyFormDl__dt">
+                        <p>メールアドレス<span class="c-replyIcon--hissu">必須</span></p>
+                    </dt>
+                    <dd class="c-replyFormDl__dd">
+                        <div class="u-w100">
+                            <input type="text" name="email" value="" placeholder="mail@mail.com" class="c-textEdit__text c-textEdit__text--reply">
+                        </div>
+                    </dd>
+                </dl>
+                <!-- 住所 -->
+                <dl class="c-replyFormDl">
+                    <dt class="c-replyFormDl__dt">
+                        <p>ご住所</p>
+                    </dt>
+                    <dd class="c-replyFormDl__dd">
+                        <div class="c-radioBtnWrap u-flxCnt">
+                            <div class="u-w100">
+                                〒<input type="text" name="postal_code" value="" placeholder="500000" class="c-textEdit__text c-textEdit__text--reply u-w70 p-postal-code">
+                            </div>
+                            <div class="u-w100 u-mT15">
+                                <select name="pref_id"  class="c-textEdit__select u-w50 p-region-id">
+                                    <option value="">都道府県</option>
+                                                                            <option value="1" >北海道</option>
+                                                                            <option value="2" >青森県</option>
+                                                                            <option value="3" >岩手県</option>
+                                                                            <option value="4" >宮城県</option>
+                                                                            <option value="5" >秋田県</option>
+                                                                            <option value="6" >山形県</option>
+                                                                            <option value="7" >福島県</option>
+                                                                            <option value="8" >茨城県</option>
+                                                                            <option value="9" >栃木県</option>
+                                                                            <option value="10" >群馬県</option>
+                                                                            <option value="11" >埼玉県</option>
+                                                                            <option value="12" >千葉県</option>
+                                                                            <option value="13" >東京都</option>
+                                                                            <option value="14" >神奈川県</option>
+                                                                            <option value="15" >新潟県</option>
+                                                                            <option value="16" >富山県</option>
+                                                                            <option value="17" >石川県</option>
+                                                                            <option value="18" >福井県</option>
+                                                                            <option value="19" >山梨県</option>
+                                                                            <option value="20" >長野県</option>
+                                                                            <option value="21" >岐阜県</option>
+                                                                            <option value="22" >静岡県</option>
+                                                                            <option value="23" >愛知県</option>
+                                                                            <option value="24" >三重県</option>
+                                                                            <option value="25" >滋賀県</option>
+                                                                            <option value="26" >京都府</option>
+                                                                            <option value="27" >大阪府</option>
+                                                                            <option value="28" >兵庫県</option>
+                                                                            <option value="29" >奈良県</option>
+                                                                            <option value="30" >和歌山県</option>
+                                                                            <option value="31" >鳥取県</option>
+                                                                            <option value="32" >島根県</option>
+                                                                            <option value="33" >岡山県</option>
+                                                                            <option value="34" >広島県</option>
+                                                                            <option value="35" >山口県</option>
+                                                                            <option value="36" >徳島県</option>
+                                                                            <option value="37" >香川県</option>
+                                                                            <option value="38" >愛媛県</option>
+                                                                            <option value="39" >高知県</option>
+                                                                            <option value="40" >福岡県</option>
+                                                                            <option value="41" >佐賀県</option>
+                                                                            <option value="42" >長崎県</option>
+                                                                            <option value="43" >熊本県</option>
+                                                                            <option value="44" >大分県</option>
+                                                                            <option value="45" >宮崎県</option>
+                                                                            <option value="46" >鹿児島県</option>
+                                                                            <option value="47" >沖縄県</option>
+                                                                    </select>
+                            </div>
+                            <div class="u-w100 u-mT15">
+                                <input type="text" name="addr01" value="" placeholder="市区町村や番地" class="c-textEdit__text c-textEdit__text--reply p-locality p-street-address p-extended-address">
+                            </div>
+                            <div class="u-w100 u-mT15">
+                                <input type="text" name="addr02" value="" placeholder="マンションや建物名など" class="c-textEdit__text c-textEdit__text--reply">
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+
+                <!-- 返信内容：アレルギーについて -->
+                                    <dl class="c-replyFormDl js-attendOnly">
+                        <dt class="c-replyFormDl__dt">
+                            <p>アレルギーについて</p>
+                            <p class="u-fosL u-mT15">アレルギーなど食べられないものがございましたら<br />
+ご遠慮なくお書き添えください</p>
+                        </dt>
+                        <dd class="c-replyFormDl__dd">
+                                                            <div class="u-w100">
+                                    <textarea name="template_text1_answer" class="c-textEdit__textarea c-textEdit__textarea--reply" rows="8"></textarea>
+                                </div>
+                                                    </dd>
+                    </dl>
+                
+                
+                
+                <!-- 返信内容：送迎バスについて -->
+                
+                <!-- 返信内容：フリー項目 -->
+                                
+                <dl class="c-replyFormDl">
+                    <dt class="c-replyFormDl__dt">
+                        <p class="">メッセージ</p>
+                    </dt>
+                    <dd class="c-replyFormDl__dd">
+                        <div class="u-w100">
+                            <textarea name="message" placeholder="ご自由にご記入ください" class="c-textEdit__textarea c-textEdit__textarea--reply" rows="8"></textarea>
+                        </div>
+                    </dd>
+                </dl>
+            </section>
+
+            
+            <section class="c-invitationSec c-invitationSec--nextBtn u-mWA">
+                <div class="c-invitationSec--replyBtn__btnWrap">
+                    
+                    <button class="c-buttonL c-buttonL--borGr u-w100 is-inactive ">次へ</button>
+                </div>
+            </section>
+        </form>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<script src="../js/commons/develop/jquery.colorbox-min.js"></script>
+<script src="../js/commons/develop/custom.js"></script>
+<script src="../js/commons/develop/customjs_pc.js"></script>
+<script src="../js/commons/develop/customjs_sp.js"></script>
+<script src="../js/common.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="../design_resource/design_common.js"></script>
+    <script src="../design_resource/wip107/design.js"></script>
+<script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
+</body>
+</html>

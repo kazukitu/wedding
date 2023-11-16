@@ -1,0 +1,884 @@
+@charset "UTF-8";
+/*------------------------------------------------------
+  ヘッダー
+------------------------------------------------------*/
+.c-headerTxt__tokuten {
+    font-size: 1.1rem;
+}
+/*------------------------------------------------------
+  ヘッダーロゴ
+------------------------------------------------------*/
+.l-header__main__ttl {
+    width: 7.4rem;
+}
+.l-header__main__cart {
+    margin-top: 18px;
+}
+.l-header__main__cart__badge {
+    right: -.8rem;
+    top: -.8rem;
+}
+.l-header__main__rightDrawerOpen img {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*------------------------------------------------------
+  メイン画像
+------------------------------------------------------*/
+.l-cateTop{
+    margin-bottom: 6rem;
+}
+
+/*------------------------------------------------------
+  タイトル
+------------------------------------------------------*/
+.c-title--L01 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.kiyaku__dt{
+    font-weight: bold;
+}
+
+/*------------------------------------------------------
+  総合TOP・カテゴリTOP ブロック余白・背景色
+------------------------------------------------------*/
+/* 背景色無し
+------------------------------------------------------*/
+.p-topBlock {
+    margin-bottom: 5rem;
+}
+/* 背景色有り
+------------------------------------------------------*/
+.p-topBlock--bg {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+    background-color: #FEF6EC;
+}
+
+/* カテゴリTOP
+---------------------------------*/
+.c-wrap--LL01 {
+    padding-top: 2rem;
+    padding-bottom: 0;
+}
+/* .c-wrap--L01 {
+    padding: 0;
+    margin-bottom: 5rem;
+}
+section.c-wrap--L01:not(.not-alternateBg):nth-of-type(odd) {
+    /*background-color: #FEF6EC;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+} */
+/* .c-wrap--L01.is-bg{
+    background-color: #FEF6EC;
+} */
+.c-mainSlide .slick-dots {
+    margin-top: 1.5rem;
+}
+
+/*---------------------------------*/
+
+/* ボタン */
+.c-buttonL {
+    font-size: 1.6rem;/* 2L */
+    padding: 1.75rem 0;
+}
+
+.c-buttonM {
+    font-size: 1.3rem;/* M */
+    padding: 1rem 0;
+}
+
+.c-buttonS {
+    font-size: 1.1rem;/* 2S */
+    padding: 0.75rem 0;
+}
+
+/* 2020.4.3 青木 */
+.c-button--orange03{
+    border-radius: 0 !important;
+}
+
+/* 表組 */
+.outline-body{
+    display: block;
+}
+.outline-data{
+    border-top: 1px #ccc solid;
+    line-height: 2;
+    font-size: 3.4375vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.outline-data__dt {
+    width: 33%;
+    font-weight: bold;
+    white-space: nowrap
+
+}
+.outline-data__dd {
+    width: 67%;
+}
+.outline-data:last-child {
+    border-bottom: 1px #ccc solid;
+}
+.outline-column__left{
+    width: 100%;
+    margin-right: 0;
+}
+.outline-column__right{
+    width: 100%;
+    margin-left: 0;
+    margin-top: -1px;
+}
+.styleBlock .scrollArea {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #f5f5f5;
+    padding: 15px;
+    position: relative;
+    margin: 15px 0 10px;
+}
+
+/* block_product_listで指定した商品の人気ランキング */
+.ranking-block_product_list .c-itemList__name {
+    margin-bottom: 1rem;
+}
+/*------------------------------------------------------
+  お客様サポート-よくある質問-_カテゴリ共通ページ
+------------------------------------------------------*/
+/* カテゴリ一覧 */
+.c-faq__nav-item--select,
+.c-faq__nav-item--unselect {
+    width:49%;
+    margin-bottom: 2%;
+}
+/* 質問一覧 */
+.c-support-faq__list__Qlist {
+    padding-left: 1rem;
+}
+/* Q&A */
+.c-support-faq__list__about-ttl,
+.c-support-faq__main__about-ttl {
+    margin-bottom: 3rem
+}
+.c-support-faq__main__QandAwrap {
+    padding-left: 1rem;
+}
+.c-support-faq__main__Q--q,
+.c-support-faq__main__A--a {
+    width: 6%;
+}
+.c-support-faq__main__Q--qtext,
+.c-support-faq__main__A--atext {
+    width: 94%;
+}
+.c-support-faq__main__A {
+    margin-bottom: 4rem;
+}
+/* 営業日バナー */
+.c-contact-box p {
+    margin: 0!important;
+}
+.c-contact-box__top__p {
+    line-height: 1.5;
+    padding: 0.5em !important;
+    font-size: 12px;
+}
+.c-contact-box__top__p__span {
+    display: inline-block;
+    margin-left: 1em;
+}
+.c-contact-box__bottom {
+    padding: 5px;
+}
+.c-contact-box__bottom__freedial {
+    width: 55%;
+}
+.c-contact-box__bottom__freedial__in {
+    margin: 0 auto;
+    display: block!important;
+}
+.c-contact-box__bottom__time {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.c-contact-box__bottom__dial__box {
+    width: 44%;
+}
+.c-contact-box__bottom__mail {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+/*------------------------------------------------------
+  総合TOP カテTOP 特集
+------------------------------------------------------*/
+.p-specialBlock {
+    padding: 0 .5rem;
+}
+.p-specialBlock__item:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+.p-specialBlock__item__txtwrap {
+    padding: .5rem;
+}
+.p-specialBlock__item__ttl {
+    font-size: 1.5rem;
+}
+.p-specialBlock__item__desc {
+    font-size: 1.2rem;
+}
+/*------------------------------------------------------
+  総合TOP カテTOP トピック
+------------------------------------------------------*/
+.p-bnrBlock {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.p-bnrBlock__item:not(:last-of-type) {
+    margin-bottom: 3rem;
+}
+.p-bnrBlock__item__ttl {
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+}
+/*------------------------------------------------------
+  無料プレゼントリンク
+------------------------------------------------------*/
+.p-noveltyLink:not(:last-of-type),
+.p-bnrLink:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+/*------------------------------------------------------
+  キャンペーンバナー配置スペース
+------------------------------------------------------*/
+.p-bnrLinkWrap {
+    padding: 0 .5rem;
+}
+.p-bnrLink__txt {
+    font-size: 1rem;
+    padding-left: .5rem;
+}
+/*------------------------------------------------------
+  画像バナー
+------------------------------------------------------*/
+.p-imgBnrWrap {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+.p-imgBnr:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+/*------------------------------------------------------
+  アイテム検索結果
+------------------------------------------------------*/
+.p-product_list_search {
+    padding: 4rem 0;
+    background-color: #FEF6EC;
+}
+/*------------------------------------------------------
+  アイテムを探す カテゴリ
+------------------------------------------------------*/
+.c-slideContents__li--2 {
+    margin-bottom: 1rem;
+}
+.c-slideContents .c-slideContents__li--2:first-child {
+    width: 50%;
+}
+.c-slideContents .c-slideContents__li--2:first-child p {
+    word-break: break-word;
+}
+.p-categoryAllItemsLink {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+/*------------------------------------------------------
+  絞り込み検索
+------------------------------------------------------*/
+.p-product_list_search {
+    margin-bottom: 2rem;
+}
+
+/*------------------------------------------------------
+  下部Fixedバナー
+------------------------------------------------------*/
+a.p-bottomFixedBnr {
+    bottom: 60px;
+    left: 0;
+    z-index: 10;
+}
+/* バナーと被るので修正 */
+.c-refineSearch__fixedBtn {
+    bottom: 10%;
+}
+
+/*------------------------------------------------------
+  記事一覧
+------------------------------------------------------*/
+.p-articles {
+    border-top: solid 1px #CCC;
+}
+.p-articles__item:nth-of-type(even) {
+    background-color: #F0F0F0;
+}
+
+/*------------------------------------------------------
+  ヘッダー上部テキスト 文字数が多い場合でも2行に収める
+------------------------------------------------------*/
+.p-headerTopTxt {
+    height: 2.5rem;
+    padding: 0;
+    justify-content: center;
+}
+.p-headerTopTxt__inner {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+/*------------------------------------------------------
+  旧サイトコンテンツ不足分移植
+------------------------------------------------------*/
+/* スライダー下テキスト
+----------------------------------------------------*/
+.p-oldCatchTxt {
+    padding: 0 1rem;
+}
+/* お客様のレビュー
+----------------------------------------------------*/
+.p-oldReviewWrap {
+    padding: 1rem;
+}
+.p-oldReviews__ttl,
+.p-oldReviews__txt {
+    padding: 0 1rem;
+}
+.p-oldReviewList:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+/* “内祝い”ってなに？
+----------------------------------------------------*/
+.p-oldWhat {
+    padding: 0 1rem;
+}
+/* 出産内祝い 相手別人気ランキング
+----------------------------------------------------*/
+.p-oldUchiBab {
+    padding: 0 1rem;
+}
+.p-oldUchiBabRank__nav {
+    align-items: flex-start;
+}
+.p-oldUchiBabRank__link {
+    width: calc(100% / 3 - 2rem / 3);
+    font-size: 1.1rem;
+}
+.p-oldUchiBabRank__link:not(:nth-of-type(3n)) {
+    margin-right: 1rem;
+}
+.p-oldUchiBabRank__link:not(:nth-last-of-type(-n+3)) {
+    margin-bottom: 1rem;
+}
+.p-oldUchiBabWhat {
+    margin-bottom: 5rem;
+}
+
+/* ヘッダーバナーエリア
+----------------------------------------------------*/
+.c-headBanners{
+    margin: 2rem 0.5rem 0 0.5rem;
+}
+.c-headBanners__item{
+    width: calc(50% - 0.5rem);
+}
+/*------------------------------------------------------
+  Yotpo修正
+------------------------------------------------------*/
+/* レビューカルーセルのタイトル幅指定
+----------------------------------------------------*/
+.carousel-reviews-bottom-line {
+    width: 70% !important;
+}
+
+/* ノベルティバナー */
+.c-noveltyBnBlock__item--col1 {
+    width: 100%;
+}
+.c-noveltyBnBlock__item--col2 {
+    width: 49%;
+}
+
+
+/*--------------------------------
+// カテゴリTOP リニューアル 2020 青木
+--------------------------------*/
+.c-slick__topSlide-re20 .slick-dots li{
+    width: 40px;
+}
+.c-slick__topSlide-re20 .slick-dots li button:before{
+    width: 70%;
+}
+
+/* SP版共通 */
+.c-mainCont-re20_sec{
+    padding: 0;
+    margin-bottom: 6rem;
+    /* border-top: 3px solid #f3f3f3; */
+    /* border-bottom: 3px solid #f3f3f3; */
+}
+.c-mainCont-re20_sec_color{
+    padding: 3rem 0;
+    margin: 0 0 6rem;
+}
+/* .c-mainCont-re20_sec:first-of-type{
+    border-top: 6px solid #f3f3f3;
+} */
+.c-mainCont-re20_sec .c-title--L01{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.c-cateCont-re20_search__list-item-detail{
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.c-cateCont-re20_search__list-item{
+    width: 48%;
+    border-bottom: 1px solid #ccc;
+}
+.c-mainCont-re20_sec .c-moreBtn{
+    margin-top: 2rem;
+}
+/* .c-cateCont-re20_search__list-item:nth-last-of-type(-n+2){
+    border: none;
+} */
+.c-cateCont-re20_search__list-item:nth-last-of-type(-n+1){
+    border: none;
+}
+.c-topContents_column{
+}
+.c-topContents_column__inner{
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+}
+
+
+/* パンくずリスト */
+.c-cateCont-re20_breadcrumb{
+    /* display: flex;
+     align-items: center;*/
+    width: 97%;
+    margin: -2rem auto 1rem;
+    padding: 0 1.5% 1rem;
+    border-bottom: 1px solid #000;
+}
+.c-cateCont-re20_breadcrumb h1{
+    padding: 0;
+    margin-top: 0.5rem;
+}
+.c-cateCont-re20_breadcrumb .c-breadCrumb__ul{
+    display: flex !important;
+}
+.c-cateCont-re20_breadcrumb .c-breadCrumb__ul li{
+    color: #707070;
+    padding: 0;
+}
+.c-cateCont-re20_breadcrumb .c-breadcrumb ol li:not(:last-child)::after{
+    content: ">";
+    margin: 0 0.5em 0 0.7em;
+    color: #707070;
+    text-decoration: none;
+}
+
+/* スマホ版メイン画像のブロック */
+.c-cateCont-re20_imgBlock li{
+    margin-bottom: 2%;
+}
+.c-cateCont-re20_imgBlock li:nth-last-child(-n+2){
+    margin-bottom: 0;
+}
+
+/* 引き出物を探す */
+.c-mainCont-re20_sec__searchSelect-list{
+    padding: 0;
+    border-top: 1px solid #CCC;
+    background-color: #F5F5F5;
+}
+.c-mainCont-re20_sec__searchSelect-listItem{
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: #707070;
+    text-align: center;
+    padding: 1rem 0;
+    border-right: 1px solid #CCC;
+    background-color: #f3f3f3;
+    transition: all 300ms;
+}
+.c-mainCont-re20_sec__searchSelect-listItem:last-of-type{
+    border-right: none;
+}
+.c-mainCont-re20_sec__searchSelect-listItem.slick-current {
+    color: #fff;
+    background-color: #f7931e;
+}
+.c-mainCont-re20_sec__searchSelect-list .slick-track,
+.c-mainCont-re20_sec__searchSelect-list .slick-list{
+    width: 100% !important;
+}
+.c-mainCont-re20_sec__searchSelect-list .slick-track{
+    display: flex;
+    justify-content: space-between;
+}
+.slick-track:before, .slick-track:after{
+    display: none;
+}
+
+/* カテゴリから探す */
+.c-mainCont-re20_cateList li{
+    font-size: 1.3rem;
+}
+.c-mainCont-re20__searchSelect-slider .heightAuto{
+    height: auto !important;
+}
+
+/* ハンバーガーメニュー内カテゴリから探す */
+.c-miniPa{
+    padding: .1rem .25rem;
+}
+
+/* 価格帯から探す */
+.c-mainCont-re20_sec-price .c-cateCont-re20_search__list-item{
+    font-size: 1.6rem;
+}
+
+/* 贈る相手から探す */
+.c-mainCont-re20_sec-opponent .c-cateCont-re20_search__list-item{
+    text-align: center;
+    border: none;
+}
+
+/* 最近チェックしたアイテム */
+.c-mainCont-re20_sec__checkItem{
+    padding: 3rem 0;
+    margin: 0 0 6rem;
+}
+.c-mainCont-re20_sec__checkItem .p-topBlock{
+    margin-bottom: 0;
+}
+.c-mainCont-re20_sec__checkItem .c-itemList__item{
+    padding-bottom: 2.5rem !important;
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+}
+
+/* 人気ランキング */
+.c-mainCont-re20_sec__ranking .p-topBlock--bg{
+    margin-bottom: 0;
+    padding: 0;
+    background-color: transparent;
+}
+.c-mainCont-re20_sec__ranking .c-itemList__item{
+    width: 50%;
+    padding: 3rem 1.5rem !important;
+}
+.c-mainCont-re20_sec__ranking .c-itemList__item:nth-child(2n)::after,
+.c-mainCont-re20_sec__ranking .c-itemList__item:nth-last-of-type(-n+2)::before{
+    display: none;
+}
+.c-mainCont-re20_sec__ranking .c-itemList__item:nth-of-type(-n+2){
+    padding-top: 0 !important;
+}
+.c-mainCont-re20_sec__ranking .c-itemList__item .yotpo{
+    bottom: 1.5rem;
+}
+.c-mainCont-re20_sec__ranking-fix .c-itemList__item{
+    padding: 3rem 1.5rem 5rem !important;
+}
+.c-mainCont-re20_sec__ranking-fix .c-itemList__item .yotpo{
+    bottom: 2.5rem;
+    left: 1.5rem;
+}
+
+/* 特集 */
+.c-mainCont-re20__specialList_item{
+    width: 48%;
+    margin-bottom: 2.5rem;
+}
+.c-mainCont-re20__specialList_item:nth-last-of-type(-n+2){
+    margin-bottom: 0;
+}
+.c-mainCont-re20__specialList_item dt{
+    font-size: 1.3rem;
+}
+.c-mainCont-re20__specialList_item-title{
+    bottom: -3rem;
+}
+.c-mainCont-re20__specialList_item dt.c-mainCont-re20__specialList_ttl2Line {
+    min-height: 4rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+@media screen and ( max-width:360px ){
+    .c-mainCont-re20__specialList_item dt{
+        font-size: 1.1rem;
+    }
+}
+.c-mainCont-re20__specialList_item dd{
+    line-height: 1.4;
+}
+
+/* 人気のブランド */
+.c-mainCont-re20_sec__brand .c-wrap--L01{
+    padding: 0;
+}
+.c-mainCont-re20_sec__brand .brand-list{
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto 3rem;
+}
+.c-mainCont-re20_sec__brand .brand-list__item{
+    width: 48%;
+    margin-bottom: 1.5rem;
+}
+.c-mainCont-re20_sec__brand .brand-list__item img{
+    background-color: #fff;
+}
+.c-mainCont-re20_sec__brand .p-moreBtn{
+    margin-top: 0;
+}
+
+/* 記事一覧 */
+.c-mainCont-re20_sec__articleList_item{
+    width: 95%;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 1.5rem .5rem;
+}
+.c-mainCont-re20_sec__articleList_item:first-of-type{
+    border-top: 1px solid #D5D5D5;
+}
+/* 記事一覧 */
+.c-mainCont-re20_sec__articleList_item-link{
+    align-items: center;
+}
+.c-mainCont-re20_sec__articleList_item-right h2,
+.c-mainCont-re20_sec__articleList_item-right h3,
+.c-mainCont-re20_sec__articleList_item-right dt{
+    font-size: 1.4rem;
+}
+
+/* ページ下部の検索リスト用 */
+.c-mainCont-re20_bottom-search{
+    width: 95%;
+    margin: 0 auto 6rem;
+    padding: 0;
+}
+.c-mainCont-re20_bottom-search:first-of-type{
+    padding-top: 0;
+}
+.c-mainCont-re20_bottom-search .c-title--L01{
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    /* border-bottom: 1px solid #CCC; */
+}
+.c-mainCont-re20_bottom-search .p-topBlock{
+    margin-bottom: 0;
+}
+.c-mainCont-re20_bottom-searchItem{
+    border-bottom: 1px solid #ccc;
+    border-style: dotted;
+}
+.c-mainCont-re20_bottom-searchItem:first-of-type{
+    border-top: 1px solid #ccc;
+    border-style: dotted;
+}
+
+.c-mainCont-re20_bottom-searchItem a{
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.c-mainCont-re20_bottom-search-keyword li{
+    font-size: 1.4rem;
+}
+.c-mainCont-re20_bottom-search-price .c-mainCont-re20_bottom-searchItem:nth-child(2){
+    border-top: 1px solid #ccc;
+    border-style: dotted;
+}
+
+/*席札マスクケース*/
+.maskcase__txt01 {
+    font-size: 2.1rem;
+}
+.maskcase__txt02 {
+    font-size: 1.35rem;
+}
+.maskcase__ttl {
+    font-size: 2.1rem;
+    width: 52%;
+    margin-bottom: 3rem;
+}
+.maskcase__txt03 {
+    font-size: 2.1rem;
+    width: 63%;
+    margin: auto;
+}
+.maskcase__txt04 {
+    font-size: 1.35rem;
+    line-height: 2.0;
+    width: 75%;
+    margin: auto;
+}
+.maskcase__itemlist__ttlImg {
+    height: 6rem;
+}
+.maskcase__itemlist__ttl-01 {
+    font-size: 1.8rem;
+}
+.maskcase__itemlist__ttl {
+    width: 87%;
+    margin: auto;
+}
+.maskcase__itemlist__txt {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.maskcase__cheer__txt {
+    font-size: 1.8rem;
+}
+.maskcase__price-arrow {
+    padding-left: 17px;
+}
+.maskcase__price-arrow::before {
+    border-width: 9px 0 9px 15px;
+    margin-top: -19px;
+}
+.maskcase__off {
+    position: absolute;
+    top: -6px;
+    right: 0px;
+}
+
+/* 1行型パンくず */
+.c-breadCrumb--1line{
+    max-height: 18px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-bottom: 1rem;
+}
+.c-breadCrumb--1line .c-breadCrumb__ul{
+    /* width: 9999px; */
+}
+.c-breadCrumb--1line .c-breadCrumb__ul__list{
+    height: 18px;
+    line-height: 18px;
+}
+
+/* footer お問い合わせ icon */
+.c-button__word--contact {
+    background-position: .9rem 0;
+}
+
+/*------------------------------------------------------
+ お客様のレビュー（新）
+----------------------------------------------------*/
+.c-reviewCont__desc,
+.c-reviewCont__list {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.c-reviewCont__item {
+    margin-bottom: 2.5rem;
+}
+/* 総合TOP改修2021.07 */
+.p-bnrLinkWrap02{
+    padding: 2% 0 0 0;
+}
+
+
+/*------------------------------------------------------
+ ハンバーガーメニュー
+----------------------------------------------------*/
+.c-miniPad{
+    padding: .1rem .25rem;
+}
+
+/* ----------------------------------
+　article （後々component.cssに移設）
+---------------------------------- */
+/*----- タイトル -----*/
+.c-article_ttl--L{
+    font-size: 2rem;
+    margin: 0 1rem 1rem;
+}
+.c-article_ttl--M{
+    font-size: 1.8rem;
+}
+.c-article_ttl--S{
+    font-size: 1.6rem;
+}
+
+/*----- テキスト -----*/
+.c-article_text{
+    margin-bottom: 2rem;
+}
+
+
+/*----- コンテンツ枠 -----*/
+.c-articleWrap--L{
+    font-size: 1.4rem;
+}
+/* .c-articleWrap--M{
+	margin: -5rem 2rem 6rem;
+} */
+.c-article-bnList{
+    margin: 0 2rem 5rem;
+}
+
+/*----- 目次 -----*/
+.c-article-index{
+    margin: 0 2rem 6rem;
+    padding: 2rem;
+}
+.c-article-index__ttl{
+    font-size: 1.6rem;
+}
+
+/*----- 商品一覧 -----*/
+.c-article-itemlist__item{
+    width: 85%;
+    margin-bottom: 3rem;
+}
+
+
+/*------------------------------------------------------
+  ボタンにghostかけたアコーディオン
+------------------------------------------------------*/
+
+.topBn-ghostAccoWrap .c-ghostAccoItem.is-hide {
+    height: 19em;
+}
+.topBn-ghostAccoWrap .c-ghostAccoItem::before {
+    height: 7em;
+    bottom: 0;
+}
+.topBn-ghostAccoWrap .c-ghostAccoTrigger a:hover{
+    color: #fff !important;
+    opacity: 1 !important;
+}
+/* タイトル背景（マーカー） */
+.c-ghostAccoWrap__titleInner {
+    background-image: linear-gradient(transparent 0%, transparent 60%, #ffda5d 60%, #ffda5d 100%);
+}

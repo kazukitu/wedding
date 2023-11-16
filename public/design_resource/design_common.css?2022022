@@ -1,0 +1,418 @@
+@charset "UTF-8";
+/* すべての招待状ページに共有するCSS */
+
+html { 
+    background-color: #fff;
+}
+body[data-aos-duration="4000"] [data-aos],
+[data-aos][data-aos][data-aos-duration="4000"] {
+    transition-duration: 4000ms;
+}
+body[data-aos-delay="4000"] [data-aos],
+[data-aos][data-aos][data-aos-delay="4000"] {
+    transition-delay: 4000ms;
+}
+body[data-aos-duration="5000"] [data-aos],
+[data-aos][data-aos][data-aos-duration="5000"] {
+    transition-duration: 5000ms;
+}
+body[data-aos-delay="5000"] [data-aos],
+[data-aos][data-aos][data-aos-delay="5000"] {
+    transition-delay: 5000ms;
+}
+.c-invitationImg {
+    margin: 0 auto;
+}
+.c-invitationPage {
+    min-height: 100vh;
+    text-align: center;
+}
+.c-invitationSec.js-scrollAction {
+    margin: 0 auto ;
+    opacity: 0;
+    position: relative;
+    top: 60px;
+    transition: opacity 0.5s, top 0.5s;
+}
+.c-invitationSec--replyBtn{
+    padding-bottom: 12rem;
+}
+.c-invitationSec.is-active.js-scrollAction {
+    opacity: 1;
+    top: 0px;
+}
+.c-invitationSec--replyBtn__btnWrap {
+    margin: 0 2rem;
+}
+.c-invitationSec--title {
+    padding-top: 3rem;
+}
+.c-invitationSec--title__ttl {
+    width: 60%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+.c-invitationSec--title__ttlImg {
+    margin-top: 3rem;
+}
+.c-invitationSec--title__name {
+    margin-bottom: 1rem;
+    font-size: 2.8rem;
+    padding: 0 1rem;
+}
+.c-invitationSec--title__date {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    padding: 0 1rem;
+}
+.c-invitationSec--invTxt {
+    max-width: 800px;
+    margin-bottom: 4rem;
+}
+.c-invitationSec--invTxt__top,
+.c-invitationSec--invTxt__middle,
+.c-invitationSec--invTxt__bottom {
+    margin: 0 2rem;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+/*url指定がcommonでないのでいったんwi1138のcssに転機*/
+/*.c-invitationSec--invTxt__middle{*/
+/*    background-image: url(/webinvitation/design_resource/wi1138/invTxt_middle.png);*/
+/*    background-size: 100%;*/
+/*    padding: 1.5rem 0;*/
+/*}*/
+.c-invitationSec--scheTxt__ttl {
+    font-size: 2rem;
+    color: #8e602c;
+    margin-bottom: 2rem;
+}
+.c-invitationSec--scheTxt {
+    font-size: 1.2rem;
+    line-height: 2;
+    background-color: #eaeaea;
+    padding: 4rem 2rem;
+    color: #666;
+    margin: 0 2rem;
+    text-align: center;
+}
+
+.c-invitationSec--scheTxt .c-invitationSec--invTxt__middle,
+.c-invitationSec--scheTxt__middle{
+    text-align: left;
+    display: inline-block;
+    margin: 0 2rem;
+    word-break: break-all;
+}
+.c-invitationSec--scheTxt__googleMap {
+    width: 100%;
+    height: 250px;
+}
+.c-invitationSec--toReply {
+    font-size: 1.2rem;
+    line-height: 2;
+    margin: 4rem 2rem;
+}
+.c-invitationSec--caption {
+    font-size: 1.2rem;
+    line-height: 2;
+    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-top: 1px solid #aaa;
+}
+.c-invitationSec--caption__txt {
+    word-break: break-all;
+}
+.c-invitationSec--replyBtn,
+.c-invitationSec--nextBtn {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 6rem;
+    padding-bottom: 12rem;
+}
+.c-invitationSec--replyBtn .c-buttonL,
+.c-invitationSec--nextBtn .c-buttonL {
+    padding: 2rem 0;
+}
+.c-invitationSec--map__googleMapWrap.is-empty{
+    background-color: #aaa;
+}
+
+/* すべての返信ページに共有するCSS */
+.c-invitationSec-repTitle {
+    padding: 0 0 4rem 0;
+}
+.c-invitationSec--repTitle__ttl {
+    margin: 0 auto;
+    max-width: 800px;
+}
+.c-invitationSec--repForm {
+    font-size: 2rem;
+}
+.c-replyFormDl {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.c-replyFormDl__dt {
+    margin-bottom: 2rem;
+}
+.c-replyFormDl__dd {
+    margin-bottom: 5rem;
+}
+.c-replyFormDl input[type="text"] {
+    background-color: rgba(255,255,255,0.6)!important;
+    box-shadow: none !important;
+    border: 0 !important;
+    padding: 1.5rem 1rem !important;
+    text-align: center !important;
+    border-bottom: 1px solid #666 !important;
+    color: #666;
+}
+.c-replyFormDl textarea,
+.c-replyFormDl select{
+    background-color: rgba(255,255,255,0.6)!important;
+    color: #666;
+}
+.c-replyIcon--hissu {
+    border: 1px solid var(--color-or01);
+    padding: 0.25rem 0.5rem;
+    font-size: 1.6rem;
+    margin-left: 0.5rem;
+    color: var(--color-or01);
+    background-color: #fff;
+}
+.js-attendOnly.is-inactive {
+    display: none;
+}
+.c-invitationSec--replyBtn--expired {
+    font-size: 1.6rem;
+    color: var(--color-rd01);
+    border: 1px solid var(--color-rd01);
+    padding: 3rem 0;
+}
+.c-invitationSec--replyBtn--preview {
+    font-size: 1.6rem;
+    color: var(--color-gr03);
+    border: 1px solid var(--color-gr03);
+    padding: 3rem 0;
+    margin: 0 1rem;
+}
+.c-invitationSec--repForm .c-radioBtn,
+.c-paymentWrap .c-radioBtn{
+    background-color: #fff;
+}
+.c-invitationPage .c-radioBtn label,
+.c-invitationPage .c-buttonL{
+    font-weight: normal!important;
+    font-family: inherit!important;
+}
+
+/* すべてのオンライン決済ページに共有するCSS */
+.c-paymentWrap,
+.c-invitationCompWrap {
+    background-color: #eaeaea;
+    padding: 3rem 1rem;
+    color: #333;
+    max-width: 600px;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    font-size: 14px;
+    box-shadow: 2px 2px 4px 1px rgba(168, 168, 168, 0.6);
+    border-radius: 8px;
+}
+.c-payment__ttl {
+    font-size: 20px;
+    font-weight: bold;
+}
+.c-payment__copy {
+    line-height: 1.8;
+    margin: 3rem 0;
+}
+.c-paymentInfo {
+    margin: 2rem 0;
+    background-color: #fff;
+    padding: 2rem 1rem;
+    font-family: font2;
+}
+.c-paymentForm01Dl {
+    text-align: left;
+}
+.c-paymentForm01Dl_dt {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.c-paymentForm01Dl_dd {
+    margin-bottom: 3rem;
+}
+.c-paymentKaihiList__item {
+    width: 100%;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+.c-paymentKaihiList__item__ttl {
+    width: 40%;
+}
+.c-paymentKaihiList_fee {
+    width: 60%;
+    text-align: right;
+}
+.c-paymentMethod {
+    position: relative;
+}
+.c-paymentMethod__paidMsg {
+    position: absolute;
+    top: -0.5rem;
+    bottom: -0.5rem;
+    width: calc(100% + 1rem);
+    height: calc(100% + 1rem);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #ff0000;
+    text-align: center;
+    z-index: 5;
+    font-size: 22px;
+}
+
+/* すべての返信完了ページに共有するCSS */
+.c-invitationCompWrap {
+    padding: 6rem 1rem;
+}
+.c-invitationComp__thx {
+    font-family: "Gerbera";
+    font-size: 42px;
+    color: #aaa;
+}
+.c-invitationComp__top {
+    margin-top: 4rem;
+}
+
+/* --------------------
+ * フォント
+ * -------------------- */
+@font-face {
+    font-family: "font1";
+    src: url("../font/DFHSMinchoRPro5-W3.woff") format("woff");
+}
+@font-face {
+    font-family: "font2";
+    src: url("../font/DFHSGothicRPro5-W3.woff") format("woff");
+}
+@font-face {
+    font-family: "font3";
+    src: url("../font/DFKaiShoPro5-W5.woff") format("woff");
+}
+@font-face {
+    font-family: "Anemone";
+    src: url("../font/Anemone.woff") format("woff");
+}
+@font-face {
+    font-family: "Babysbreath";
+    src: url("../font/Babysbreath.woff") format("woff");
+}
+@font-face {
+    font-family: "Clematis";
+    src: url("../font/Clematis.woff") format("woff");
+}
+@font-face {
+    font-family: "Cosmos";
+    src: url("../font/Cosmos.woff") format("woff");
+}
+@font-face {
+    font-family: "Dahlia";
+    src: url("../font/Dahlia.woff") format("woff");
+}
+@font-face {
+    font-family: "Daisy";
+    src: url("../font/Daisy.woff") format("woff");
+}
+@font-face {
+    font-family: "Dandelion";
+    src: url("../font/Dandelion.woff") format("woff");
+}
+@font-face {
+    font-family: "Freesia";
+    src: url("../font/Freesia.woff") format("woff");
+}
+@font-face {
+    font-family: "Gerbera";
+    src: url("../font/Gerbera.woff") format("woff");
+}
+@font-face {
+    font-family: "Hibiscus";
+    src: url("../font/Hibiscus.woff") format("woff");
+}
+@font-face {
+    font-family: "Iris";
+    src: url("../font/Iris.woff") format("woff");
+}
+@font-face {
+    font-family: "Lavender";
+    src: url("../font/Lavender.woff") format("woff");
+}
+@font-face {
+    font-family: "Lilac";
+    src: url("../font/Lilac.woff") format("woff");
+}
+@font-face {
+    font-family: "Lily";
+    src: url("../font/Lily.woff") format("woff");
+}
+@font-face {
+    font-family: "Lupine";
+    src: url("../font/Lupine.woff") format("woff");
+}
+@font-face {
+    font-family: "Marguerite";
+    src: url("../font/Marguerite.woff") format("woff");
+}
+@font-face {
+    font-family: "Marigold";
+    src: url("../font/Marigold.woff") format("woff");
+}
+@font-face {
+    font-family: "Marigold_wb";
+    src: url("../font/Marigold_wb.woff") format("woff");
+}
+@font-face {
+    font-family: "Mimosa";
+    src: url("../font/Mimosa.woff") format("woff");
+}
+@font-face {
+    font-family: "Pansy";
+    src: url("../font/Pansy.woff") format("woff");
+}
+@font-face {
+    font-family: "Petunia";
+    src: url("../font/Petunia.woff") format("woff");
+}
+@font-face {
+    font-family: "Petunia2";
+    src: url("../font/Petunia2.woff") format("woff");
+}
+@font-face {
+    font-family: "Ranunculus";
+    src: url("../font/Ranunculus.woff") format("woff");
+}
+@font-face {
+    font-family: "Rose";
+    src: url("../font/Rose.woff") format("woff");
+}
+@font-face {
+    font-family: "Sunflower";
+    src: url("../font/Sunflower.woff") format("woff");
+}
+@font-face {
+    font-family: "Sweetpea";
+    src: url("../font/Sweetpea.woff") format("woff");
+}
+@font-face {
+    font-family: "Tulip";
+    src: url("../font/Tulip.woff") format("woff");
+}
+@font-face {
+    font-family: "Violet";
+    src: url("../font/Violet.woff") format("woff");
+}

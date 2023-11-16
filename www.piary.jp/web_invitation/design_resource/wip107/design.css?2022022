@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+.c-invitationPage{
+	color: #333;
+}
+.c-invitationPage--reply{
+	background-color: #fff4e2;
+}
+.c-invitationSec--titleTop {
+	position: relative;
+	padding: 3rem 0;
+}
+.c-invitationSec--title {
+	padding-top: 0;
+}
+.triangle-top-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40vw;
+	height: 40vw;
+	background-image: linear-gradient(135deg, #eba73f33,#eba73f33 50%, transparent 50%, transparent 100%);
+	animation: SlideUp 2s;
+}
+.triangle-top-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 80vw;
+	height: 100vw;
+	background-image: linear-gradient(-129deg, #d8ddb880,#d8ddb880 50%, transparent 50%, transparent 100%);
+	animation: SlideUp 3.5s;
+}
+.triangle-bottom-right {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 20vw;
+	height: 20vw;
+	background-image: linear-gradient(-45deg, #eba73f33,#eba73f33 50%, transparent 50%, transparent 100%);
+	animation: SlideUp 5s ease-in-out;
+}
+@keyframes SlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.c-invitationSec--title {
+	background-color: #fff4e2;
+}
+.c-invitationSec--title__ttl{
+	width: 70%;
+	max-width: 520px;
+}
+.c-invitationSec--title__ttlImg{
+	margin-top: 0;
+}
+.c-invitationSec--title__name{
+	font-family: "font1";
+}
+.c-invitationSec--title__date{
+	font-family: "font1";
+	margin-bottom: 0;
+}
+.c-invitationSec--invTxt {
+	margin-bottom: 0;
+}
+.c-invitationSec--invTxt__top,
+.c-invitationSec--scheTxt__top {
+	display: none;
+}
+.c-invitationSec--invTxt__middle,
+.c-invitationSec--invTxt__bottom {
+    margin: 0;
+}
+.c-invitationSec--img02{
+	margin-bottom: 0;
+}
+.c-invitationSec--invTxt__middle{
+	background-size: 100%;
+	padding: 4rem 2rem 2rem 2rem;
+}
+.c-invitationSec--scheTxt {
+	background-color: transparent;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	margin : 0;
+}
+.c-invitationSec--scheTxt__middle{
+	padding: 0 2rem 2rem 2rem;
+}
+.c-invitationSec--scheTxt__ttl {
+	width: 50%;
+	max-width: 335px;
+	margin: 0 auto;
+	margin-bottom: 3rem;
+}
+.c-invitationSec--replyBtn__btn {
+	border-color: #a0ab74;
+}
+.c-invitationSec--toReply__txt{
+}
+.c-buttonL,
+.c-invitationSec--repForm .c-radioBtn{
+    color: #a0ab74;
+    background-color: #fff;
+    border: 2px solid #a0ab74;
+}

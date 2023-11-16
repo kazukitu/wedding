@@ -1,0 +1,33 @@
+@charset "UTF-8";
+body {
+    font-size: 1.6rem;
+}
+.c-WItitle_3L{
+    font-size: var(--font-5l);
+}
+.c-WIheader{
+    height: 60px;
+}
+.c-WIheader__logoWrap{
+    width: 60px;
+}
+.c-WIheader__titleWrap{
+    width: calc(100% - 60px);
+    max-width: calc(1000px - 60px);
+    padding-right: 60px;
+}
+.c-WImain{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 10rem 0 0;
+}
+.c-invItem--top .c-buttonList{
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 40%;
+}
+.c-WItitle_L--bgGr {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}

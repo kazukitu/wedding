@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* SPのみ非表示 */
+.u-none--sp {
+    display: none;
+}
+/* スクロールするエリア */
+.u-scroll{
+    overflow: auto;
+    white-space: nowrap;
+}
+.u-scroll::-webkit-scrollbar{
+    height: 5px;
+}
+.u-scroll::-webkit-scrollbar-track{
+    background: #F1F1F1;
+}
+.u-scroll::-webkit-scrollbar-thumb {
+    background: #BCBCBC;
+}
+
+/* u-fos フォントサイズ（2021年7月～） */
+.u-fos3L{ font-size: 1.8rem; }
+.u-fos2L{ font-size: 1.6rem; }
+.u-fosL{ font-size: 1.4rem; }
+.u-fosM{ font-size: 1.3rem; }
+.u-fosS{ font-size: 1.2rem; }
+.u-fos2S{ font-size: 1.1rem; }
+.u-fos3S{ font-size: 1.0rem; }

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.c-invitationPage{
+	max-width: 800px;
+  margin: 0 auto;
+}
+.triangle-top-left {
+  width: 320px;
+  height: 320px;
+}
+.triangle-top-right {
+  width: 620px;
+  height: 769px;
+}
+.triangle-bottom-right {
+  width: 160px;
+  height: 160px;
+}
+.c-invitationSec--title__name{
+	font-size: 4.5rem;
+}
+.c-invitationSec--title__date{
+	font-size: 2.8rem;
+}

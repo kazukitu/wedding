@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+/* 共通
+ ------------------------------ */
+ .l-optionDrawer__fixTtl {
+    align-items: center;
+}
+.c-icButton--S {
+    width: 85px;
+    height: 85px;
+    font-size: 1.3rem;
+}
+.c-icButton--S .c-icButton__img{
+    width: 52%;
+}
+.c-icButton--M {
+    width: 100px;
+    height: 100px;
+    font-size: 1.6rem;
+}
+.c-fixButton{
+    bottom: 2rem;
+}
+.c-fixButton--wide{
+    width: 1000px;
+    margin-left: calc(50% - 500px);
+    left: 0;
+}
+.c-fixButton__link {
+    width: 85px;
+    height: 85px;
+}
+.c-fixButton__link--next{
+    height: 85px;
+    width: calc(100% - 85px - 1rem);
+    max-width: 500px;
+}
+.c-fixButton__link--preview,
+.c-fixButton__link--savedTmp {
+    width: 100px;
+    height: 100px;
+    font-size: 1.4rem;
+}
+.c-fixButton__link--preview img,
+.c-fixButton__link--savedTmp img {
+    width: 45px;
+}
+.c-icButton__txtS {
+    font-size: 11px;
+}
+
+/* TOP
+ ------------------------------ */
+.c-invItem__name{
+    font-size: var(--font-3l);
+}
+.c-invPrepare__list{
+    margin-top: 2rem;
+}
+.c-invPrepare__item{
+    width: calc((100% - 30px)/4);
+}
+.c-invGMenu__link{
+    padding: 1rem 1rem;
+}
+.c-invItem__imgWrap{
+    width: 12.5%;
+}
+.c-invItem__txtWrap{
+    width: 80%;
+}
+.c-invGMenu{
+    margin-left: 35%;
+}
+
+/* 招待状作成　デザイン選択
+ ------------------------------ */
+.c-invCreateItem__imgWrap{
+    width: 12.5%;
+}
+.c-invCreateItem__txtWrap{
+    width: 87.5%;
+}
+.c-designEdit__item{
+    width: 28%;
+    cursor: pointer;
+}
+.c-scrollList {
+    padding-bottom: 20px;
+}
+/* デザイン選択 slick */
+.c-designSlick {
+    overflow: visible;
+}
+.c-designSlick .slick-list {
+    padding: 0 13% 0 0!important;
+}
+.c-designSlick .slick-track {
+	margin-left: 0;
+}
+.c-designSlick .c-scrollList__item {
+    margin-right: 1rem;
+}
+.c-designSlick .slick-arrow {
+    --size: 40px;
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    background-color: rgba(0,0,0,.4);
+    border-radius: 9999px;
+    top: calc(50% - (var(--size)/2));
+    font-size: 0;
+    z-index: 1;
+}
+.c-designSlick .slick-prev {
+    left: -10px;
+}
+.c-designSlick .slick-next {
+    right: -20px;
+}
+.c-designSlick .slick-prev::after,
+.c-designSlick .slick-next.slick-disabled::before,
+.c-designSlick .slick-next.slick-disabled::after,
+.c-designSlick .slick-next::after {
+    content: "";
+    --size: 12px;
+    width: var(--size);
+    height: var(--size);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    position: absolute;
+    top: 12.5px;
+}
+.c-designSlick .slick-next::after {
+    transform: rotate(-45deg);
+    right: 15px;
+}
+.c-designSlick .slick-prev::after,
+.c-designSlick .slick-next.slick-disabled::before,
+.c-designSlick .slick-next.slick-disabled::after {
+    transform: rotate(135deg);
+}
+.c-designSlick .slick-prev::after {
+    left: 15px;
+}
+.c-designSlick .slick-next.slick-disabled::before {
+    left: 11px;
+}
+.c-designSlick .slick-next.slick-disabled::after {
+    left: 19px;
+}
+.c-designSlick .slick-prev.slick-disabled {
+    opacity: 0;
+}
+
+/* 招待状作成　文面編集
+ ------------------------------ */
+.c-textEdit__detail {
+    padding: 3rem 12rem;
+}
+.l-optionDrawer .c-textEdit__detail {
+    padding: 3rem 2rem;
+}
+
+/* ゲスト情報
+ ------------------------------ */
+.c-guestSearchWrap--whom__item{
+    width: auto;
+    min-width: auto;
+}
+
+/* 招待状パスワード入力 */
+.c-invitationPW__inner{
+    max-width: 600px;
+}
+.c-invitationPW__ttl{
+    font-size: 3.2em;
+}
+
+

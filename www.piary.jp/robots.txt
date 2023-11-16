@@ -1,0 +1,2 @@
+Disallow: /*.csv$
+Sitemap: https://www.piary.jp/sitemap.xml

@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+/* PCのみ非表示 */
+.u-none--pc {
+    display: none;
+}

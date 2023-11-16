@@ -1,0 +1,491 @@
+@charset "UTF-8";
+
+/* サイト内全体
+ ------------------------------ */
+:root {
+    --color-gr01: #7E7E7E;
+    --color-gr02: #606060;
+    --color-gr03: #B8B8B8;
+    --color-gr04: #f0f0f0;
+    --color-gr05: #464646;
+    --color-or01: #F99D8C;
+    --color-or02: #E97500;
+    --color-bl01: #7dc2c9;
+    --color-rd01: #E8042B;
+    --color-rd02: #D8614C;
+    --font-5l: 28px;
+    --font-4l: 24px;
+    --font-3l: 22px;
+    --font-2l: 20px;
+    --font-l: 18px;
+    --font-m: 16px;
+    --shadow01: 0px 3px 6px rgba(0,0,0,.16);
+}
+html{
+    background-color: var(--color-gr04);
+}
+body{
+    background: transparent;
+    color: var(--color-gr05);
+}
+br{
+	font-family: sans-serif !important; /* brタグ豆腐バグ対策？ */
+}
+.c-WImain{
+    padding: 8rem 0 0;
+}
+.c-WIsection{
+    margin-bottom: 4rem;
+}
+.c-WItitle_3L {
+    font-size: var(--font-3l);
+    font-weight: bold;
+}
+.c-WItitle_3L--02 {
+    position: relative;
+    color: #464646;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.c-WItitle_3L--02::before {
+    content: "";
+    width: 10px;
+    height: 25px;
+    border-radius: 5px;
+    background-color:var(--color-gr05);
+}
+.c-WItitle_2L {
+    font-size: var(--font-2l);
+    font-weight: bold;
+}
+.c-WItitle_L {
+    font-size: var(--font-l);
+    font-weight: bold;
+}
+.c-WItitle_L--bgGr {
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: var(--font-l);
+    background-color: var(--color-gr04);
+    gap: 10px;
+    height: 50px;
+    position: relative;
+}
+.c-WItitle_L--bgWh {
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: var(--font-l);
+    background-color: #fff;
+    gap: 10px;
+    height: 50px;
+    position: relative;
+}
+
+/* ヘッダー
+ ------------------------------ */
+.c-WIheader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 42px;
+    background-color: #fbeee8;
+    z-index: 10;
+    box-shadow: var(--shadow01);
+}
+.c-WIheader__menuWrap,
+.c-WIheader__menu,
+.c-WIheader__logoWrap,
+.c-WIheader__titleWrap {
+    height: 100%;
+}
+.c-WIheader__menuWrap,
+.c-WIheader__logoWrap {
+    width: 40px;
+}
+.c-WIheader__titleWrap{
+    width: calc(100% - 40px);
+    padding-right: 40px;
+}
+.c-WIheader__menu{
+    padding: 12px 10px;
+}
+.c-WIheader__menu__border01,
+.c-WIheader__menu__border02,
+.c-WIheader__menu__border03{
+    height: 2px;
+    margin: 2px 0;
+    width: 100%;
+    border-top: 1px solid #aaa;
+}
+
+/* ボタン・フォーム
+ ------------------------------ */
+.c-buttonL {
+    font-weight: bold;
+    font-size: var(--font-l);
+    color: var(--color-gr05);
+    border-radius: 50vw;
+    padding: 2rem 0;
+}
+.c-buttonL--bl {
+    background-color: var(--color-bl01);
+    color: #fff;
+    font-weight: bold;
+}
+.c-buttonL--bl__icPlus {
+    vertical-align: bottom;
+}
+.c-buttonL--borGr01 {
+    border: 1px solid var(--color-gr05);
+    box-shadow: none;
+}
+.c-buttonL--borGr {
+    border: 1px solid #ccc;
+}
+.c-button--delete {
+    color: #fff;
+}
+.c-button--delete:not(.is-inactive) {
+    background-color: var(--color-rd01) !important;
+}
+.c-button--delete.is-inactive {
+    background-color: var(--color-gr03);
+}
+.c-buttonM {
+    padding: 2rem 0;
+    border-radius: 50vw;
+    background-color: #fff;
+    font-weight: bold !important;
+    font-size: var(--font-m);
+}
+.c-buttonM--borGr01 {
+    border: 1px solid var(--color-gr05);
+    box-shadow: none;
+}
+.c-sendButtonList {
+    gap: 2rem 1rem;
+    font-size: 14px;
+    font-weight: bold;
+}
+.c-sendButton {
+    display: block;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-bottom: .5rem;
+    box-shadow: var(--shadow01);
+}
+.c-radioBtn {
+    border: 1px solid #ccc;
+    box-shadow: var(--shadow01);
+    position: relative;
+    border-radius: 50vw;
+    font-size: var(--font-l);
+}
+.c-radioBtn.js-selected {
+    border: 1px solid var(--color-or01);
+}
+.c-buttonL--ic {
+    gap: 10px;
+}
+.c-radio label,
+.c-radioBtn label {
+    margin-bottom: 0;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+.c-radioBtn label {
+    font-weight: bold!important;
+}
+.c-radio label {
+    padding: .5rem 2rem .5rem 3rem;
+}
+.c-radioBtn label.c-textEdit__label01 {
+    padding: 1.5rem 0 1.5rem 6rem;
+}
+.c-textEdit__label01[for="font_01"] {
+    font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", "ＭＳ 明朝", "Noto Serif JP", serif;
+}
+.c-radioBtn label.c-textEdit__label02 {
+    padding: 1.5rem 0 1.5rem 3.5rem;
+}
+.c-radio label::before,
+.c-radioBtn label::before {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    margin-top: -5px;
+    top: calc(50% - 2px);
+    width: 14px;
+    height: 14px;
+    background-color: #ccc;
+}
+.c-radio label::before {
+    left: 4px;
+}
+.c-radio label::after {
+    left: 0;
+}
+.c-radioBtn label.c-textEdit__label01::before {
+    left: 2.9rem;
+}
+.c-radioBtn label.c-textEdit__label02::before {
+    left: 1.2rem;
+}
+.c-radio label::after,
+.c-radioBtn label::after {
+    content: "";
+    position: absolute;
+    top: calc( 50% - 1px);
+    display: block;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+.c-radioBtn label.c-textEdit__label01::after {
+    left: 2.5rem;
+}
+.c-radioBtn label.c-textEdit__label02::after {
+    left: .8rem;
+}
+.c-radio input[type=radio],
+.c-radioBtn input[type=radio] {
+    display: none;
+}
+.c-radio input[type=radio]:checked + label:before,
+.c-radioBtn input[type=radio]:checked + label:before {
+    opacity: 1;
+    animation: icRadioSelected 0.3s ease 0s 1 normal;
+    background-color: var(--color-or01);
+}
+.c-radio input[type=radio]:checked + label:after,
+.c-radioBtn input[type=radio]:checked + label:after {
+    opacity: 1;
+    border: 1px solid var(--color-or01);
+}
+.c-textEdit__otherInfoTitle label {
+    font-weight: bold !important;
+}
+.c-textEdit__otherInfoTitle input[type=checkbox] {
+    display: none;
+}
+input[type="text"].c-textEdit__text,
+input[type="email"].c-textEdit__text  {
+    height: 55px;
+    border-radius: 4px;
+    box-shadow: inset var(--shadow01);
+    font-size: var(--font-l);
+    border-color: var(--color-gr03);
+    color: var(--color-gr01);
+}
+select.c-textEdit__select {
+    height: 55px;
+    min-width: 85px;
+    box-shadow: inset var(--shadow01);
+    border-radius: 4px;
+    font-size: var(--font-l);
+    color: #999;
+    border: 1px solid var(--color-gr03);
+    background: #fff url(../img/ic_arrow_tr_down.svg) no-repeat calc(100% - .5rem) 50% / 18px 18px !important;
+}
+.c-textEdit__imageArea{
+    width: 100%;
+    min-height: 230px;
+    border: 4px solid var(--color-gr01);
+    background-color: #ccc;
+    position: relative;
+    color: #fff;
+    font-size: var(--font-4l);
+}
+.c-deleteButton {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--color-bl01);
+    box-shadow: var(--shadow01);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.c-deleteButton {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--color-bl01);
+    box-shadow: var(--shadow01);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.c-deleteButton--movie{
+    position: relative;
+    top: auto;
+    right: auto;
+}
+.c-movieEdit__justup{
+    line-height: 54px;
+    border: 2px solid #ccc;
+    padding: 1rem;
+    font-size: var(--font-m);
+    font-weight: bold;
+}
+.c-deleteButton::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-top: 2px solid #fff;
+    transform: rotate(45deg);
+    top: 27px;
+    right: 27px;
+}
+.c-deleteButton::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-top: 2px solid #fff;
+    transform: rotate(-45deg);
+    top: 27px;
+    right: 14px;
+}
+textarea.c-textEdit__textarea {
+    box-shadow: inset var(--shadow01);
+    color:  var(--color-gr01);
+    font-size: 1.6rem;
+    width: 100%;
+    border-radius: 4px!important;
+    padding: 1.5rem 1rem;
+}
+.c-textEdit__buttonWrap {
+    gap: 1rem;
+}
+.c-feeEdit__item {
+    gap: 1rem;
+}
+
+/* テーブル
+*/
+/* 支払 */
+.c-WItable_01__tr:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+.c-WItable_01__th,
+.c-WItable_01__td {
+    font-weight: bold;
+}
+.c-WItable_01__th {
+    text-align: left;
+    padding: 2rem 1rem 2rem 2rem;
+}
+.c-WItable_01__td {
+    text-align: right;
+    padding: 2rem 2rem 2rem 1rem;
+}
+/* ゲスト情報 */
+.c-WItable_02 {
+    font-size: 13px;
+}
+.c-WItable_02__th {
+    text-align: left;
+    font-weight: bold;
+    padding: 0.4rem 0;
+}
+.c-WItable_02__td {
+    padding: 0.4rem 0;
+}
+
+/* アコーディオン */
+.c-details {
+    border-top: 1px solid #ccc;
+}
+.c-summary {
+    padding: 2rem;
+    font-size: 1.4rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    box-shadow: var(--shadow01);
+    position: relative;
+}
+.c-summaryContent {
+    border-bottom: 1px solid #ccc;
+}
+.c-arrow::after {
+    position: absolute;
+    right: 2rem;
+    top: calc(50% - 9px);
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-right: 1px solid var(--color-gr01);
+    border-bottom: 1px solid var(--color-gr01);
+}
+.c-arrow--d::after {
+    transform: rotate(45deg);
+}
+.c-arrow--d.is-open::after {
+    transform: rotate(-135deg);
+}
+
+/* フッター
+ ------------------------------ */
+.c-WIfooter {
+    background-color: var(--color-gr03);
+    color: #fff;
+    padding: 1em 0 8rem;
+}
+.c-WIfooter__copy {
+    font-size: 1.2rem;
+}
+
+/* エラー表示 */
+.alert-primary{
+    color: var(--color-bl01);
+    border: 2px solid var(--color-bl01);
+    margin: 0 1rem 4rem 1rem;
+    padding: 1rem;
+    background-color: #fff;
+}
+.alert-danger{
+    color: var(--color-rd01);
+    border: 2px solid var(--color-rd01);
+    margin: 0 1rem 4rem 1rem;
+    padding: 1rem;
+}
+.c-WIsection.c-withdraw .alert-danger{
+    border: 0;
+    margin: 0.25rem 0 0 25%;
+    padding: 0;
+}
+.c-modal--guestAdd .alert-danger,
+.c-modal--guestEdit .alert-danger{
+    border: 0;
+    margin: 0;
+}
+.c-errorMsg{
+	margin: 1rem 0 3rem 0;
+    color: var(--color-rd01);
+}
+
+/* オンライン決済非表示　ここから */
+/*
+.c-invEditCredit,
+.c-invGMenu__item:first-child,
+.c-WItable_02__tr--payment,
+.c-guestHistory__label:nth-child(2){
+    display: none!important;
+}
+.c-guestHistory__status{
+    width: 75px!important;
+}
+.c-invGMenu__item:nth-child(2){
+    margin-left: calc(50% + 5px);
+}
+*/
+/* オンライン決済非表示　ここまで */
